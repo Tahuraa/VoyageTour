@@ -1,0 +1,210 @@
+🇹🇭 Thailand
+Activity	Location	Category	Price (USD)	Duration
+Grand Palace & Temple Tour	Bangkok	sightseeing	25	180 min
+Wat Arun Visit	Bangkok	culture	10	90 min
+Chao Phraya River Cruise	Bangkok	sightseeing	30	120 min
+Bangkok City Tour	Bangkok	sightseeing	35	240 min
+Floating Market Tour	Bangkok	culture	30	240 min
+Thai Cooking Class	Bangkok	food	40	180 min
+Safari World Bangkok	Bangkok	entertainment	45	300 min
+Coral Island Tour	Pattaya	adventure	40	300 min
+Sanctuary of Truth	Pattaya	culture	20	120 min
+Pattaya City Tour	Pattaya	sightseeing	30	240 min
+Phi Phi Island Tour	Phuket	nature	70	480 min
+James Bond Island Tour	Phuket	adventure	65	420 min
+Phuket Old Town Tour	Phuket	culture	25	180 min
+Phuket Sunset Cruise	Phuket	entertainment	50	180 min
+Krabi Four Islands Tour	Krabi	adventure	60	420 min
+Railay Beach Visit	Krabi	beach	30	240 min
+Chiang Mai Temple Tour	Chiang Mai	culture	30	240 min
+Elephant Sanctuary Visit	Chiang Mai	nature	60	300 min
+
+
+🇲🇾 Malaysia
+Activity	Location	Category	Price	Duration
+Petronas Twin Towers Visit	Kuala Lumpur	sightseeing	25	120 min
+Kuala Lumpur City Tour	Kuala Lumpur	sightseeing	30	240 min
+Batu Caves Tour	Kuala Lumpur	culture	20	180 min
+KL Tower Visit	Kuala Lumpur	sightseeing	20	120 min
+Jalan Alor Food Tour	Kuala Lumpur	food	30	180 min
+Genting Highlands Day Trip	Genting Highlands	entertainment	50	480 min
+Langkawi Island Hopping	Langkawi	adventure	40	300 min
+Langkawi Mangrove Tour	Langkawi	nature	45	300 min
+Langkawi Sunset Cruise	Langkawi	entertainment	60	180 min
+Sky Bridge Visit	Langkawi	nature	25	180 min
+Penang Heritage Tour	Penang	culture	30	240 min
+George Town Food Tour	Penang	food	35	180 min
+
+
+🇸🇬 Singapore
+Activity	Location	Category	Price	Duration
+Gardens by the Bay	Singapore	nature	25	180 min
+Marina Bay City Tour	Singapore	sightseeing	30	180 min
+Singapore Flyer	Singapore	sightseeing	30	90 min
+Sentosa Island Tour	Singapore	entertainment	40	360 min
+Universal Studios Singapore	Singapore	entertainment	75	480 min
+Singapore River Cruise	Singapore	sightseeing	25	90 min
+Night Safari	Singapore	nature	45	240 min
+Singapore Food Tour	Singapore	food	35	180 min
+
+
+🇮🇩 Indonesia
+Activity	Location	Category	Price	Duration
+Uluwatu Temple Visit	Bali	culture	20	180 min
+Bali Swing Experience	Bali	adventure	30	120 min
+Nusa Penida Island Tour	Bali	nature	70	480 min
+Tegallalang Rice Terrace	Ubud	nature	15	120 min
+Ubud Palace Visit	Ubud	culture	10	90 min
+Bali Cooking Class	Ubud	food	40	180 min
+Mount Batur Sunrise Trek	Bali	adventure	55	360 min
+Bali Sunset Dinner Cruise	Bali	entertainment	50	180 min
+Kuta Beach Visit	Bali	beach	0	120 min
+Tanah Lot Temple	Bali	culture	15	150 min
+
+
+🇲🇻 Maldives
+Activity	Location	Category	Price	Duration
+Snorkeling Trip	Malé	adventure	40	180 min
+Dolphin Watching Cruise	Malé	nature	50	180 min
+Sunset Cruise	Malé	entertainment	45	120 min
+Island Hopping	Malé	adventure	50	300 min
+Scuba Diving Experience	Malé	adventure	80	180 min
+Sandbank Excursion	Malé	beach	60	240 min
+Maafushi Island Tour	Maafushi	sightseeing	40	300 min
+
+
+🇱🇰 Sri Lanka
+Activity	Location	Category	Price	Duration
+Colombo City Tour	Colombo	sightseeing	30	240 min
+Temple of the Tooth Visit	Kandy	culture	15	120 min
+Kandy Cultural Dance Show	Kandy	culture	20	120 min
+Ella Train Ride	Ella	nature	25	300 min
+Nine Arches Bridge Visit	Ella	nature	10	120 min
+Tea Plantation Tour	Nuwara Eliya	culture	20	180 min
+Galle Fort Tour	Galle	culture	20	180 min
+Yala Safari	Yala	nature	60	360 min
+
+
+🇮🇳 India
+Activity	Location	Category	Price	Duration
+Taj Mahal Visit	Agra	culture	25	180 min
+Jaipur City Palace	Jaipur	culture	15	120 min
+Amber Fort Tour	Jaipur	culture	20	180 min
+Delhi City Tour	Delhi	sightseeing	30	300 min
+Goa Beach Tour	Goa	beach	20	240 min
+Goa Sunset Cruise	Goa	entertainment	35	180 min
+Kerala Backwater Cruise	Kerala	nature	50	300 min
+Kashmir Gulmarg Tour	Kashmir	nature	40	360 min
+Manali Adventure Tour	Manali	adventure	45	300 min
+
+
+🇯🇵 Japan
+Activity	Location	Category	Price	Duration
+Tokyo City Tour	Tokyo	sightseeing	50	360 min
+Mount Fuji Day Trip	Tokyo	nature	80	600 min
+Shibuya Walking Tour	Tokyo	sightseeing	20	150 min
+Kyoto Temple Tour	Kyoto	culture	40	300 min
+Arashiyama Bamboo Forest	Kyoto	nature	20	180 min
+Osaka Castle Visit	Osaka	culture	15	120 min
+Osaka Food Tour	Osaka	food	40	180 min
+
+
+🇰🇷 South Korea
+Activity	Location	Category	Price	Duration
+Seoul City Tour	Seoul	sightseeing	40	300 min
+Gyeongbokgung Palace	Seoul	culture	15	120 min
+N Seoul Tower	Seoul	sightseeing	20	120 min
+Korean Cooking Class	Seoul	food	45	180 min
+Busan Coastal Tour	Busan	nature	40	300 min
+Jeju Island Tour	Jeju Island	nature	60	360 min
+Jeju Waterfall Tour	Jeju Island	nature	30	240 min
+
+
+🇹🇷 Turkey
+Activity	Location	Category	Price	Duration
+Istanbul City Tour	Istanbul	sightseeing	40	300 min
+Hagia Sophia Visit	Istanbul	culture	20	120 min
+Bosphorus Cruise	Istanbul	sightseeing	30	180 min
+Grand Bazaar Tour	Istanbul	shopping	20	180 min
+Cappadocia Hot Air Balloon	Cappadocia	adventure	200	180 min
+Cappadocia Valley Tour	Cappadocia	nature	50	300 min
+Pamukkale Tour	Pamukkale	nature	50	360 min
+Antalya Old Town Tour	Antalya	culture	25	180 min
+Antalya Boat Trip	Antalya	beach	45	300 min
+
+
+🇦🇪 United Arab Emirates
+Activity	Location	Category	Price	Duration
+Burj Khalifa Visit	Dubai	sightseeing	50	120 min
+Dubai City Tour	Dubai	sightseeing	40	300 min
+Desert Safari	Dubai	adventure	60	360 min
+Dubai Marina Cruise	Dubai	entertainment	45	120 min
+Dubai Mall & Downtown Tour	Dubai	shopping	25	180 min
+Abu Dhabi City Tour	Abu Dhabi	sightseeing	50	360 min
+Sheikh Zayed Grand Mosque	Abu Dhabi	culture	20	150 min
+Ferrari World Visit	Abu Dhabi	entertainment	80	360 min
+
+
+
+🇫🇷 France
+Activity	Location	Category	Price	Duration
+Eiffel Tower Visit	Paris	sightseeing	35	150 min
+Louvre Museum Tour	Paris	culture	30	180 min
+Paris City Tour	Paris	sightseeing	45	300 min
+Seine River Cruise	Paris	entertainment	25	120 min
+Versailles Palace Tour	Paris	culture	40	300 min
+French Food Tour	Paris	food	50	180 min
+Nice Old Town Tour	Nice	culture	25	180 min
+French Riviera Tour	Nice	beach	50	360 min
+
+
+🇮🇹 Italy
+Activity	Location	Category	Price	Duration
+Colosseum Tour	Rome	culture	35	180 min
+Vatican Museums Tour	Rome	culture	40	180 min
+Rome City Tour	Rome	sightseeing	45	300 min
+Venice Gondola Ride	Venice	entertainment	50	90 min
+Venice Walking Tour	Venice	sightseeing	25	180 min
+Milan Duomo Visit	Milan	culture	25	120 min
+Florence Walking Tour	Florence	culture	30	180 min
+Amalfi Coast Tour	Amalfi Coast	nature	60	480 min
+
+
+🇨🇭 Switzerland
+Activity	Location	Category	Price	Duration
+Jungfraujoch Day Trip	Interlaken	nature	120	480 min
+Interlaken City Tour	Interlaken	sightseeing	25	180 min
+Mount Titlis Tour	Lucerne	nature	100	360 min
+Lucerne City Tour	Lucerne	sightseeing	30	180 min
+Rhine Falls Tour	Zurich	nature	50	300 min
+Swiss Alps Scenic Train	Zurich	nature	90	360 min
+
+
+🇬🇷 Greece
+Activity	Location	Category	Price	Duration
+Santorini Sunset Tour	Santorini	sightseeing	45	180 min
+Santorini Caldera Cruise	Santorini	entertainment	70	300 min
+Santorini Island Tour	Santorini	sightseeing	40	300 min
+Acropolis Tour	Athens	culture	30	180 min
+Athens City Tour	Athens	sightseeing	40	300 min
+Mykonos Island Tour	Mykonos	beach	50	300 min
+
+
+🇦🇺 Australia
+Activity	Location	Category	Price	Duration
+Sydney Opera House Tour	Sydney	culture	30	120 min
+Sydney Harbour Cruise	Sydney	sightseeing	45	150 min
+Sydney City Tour	Sydney	sightseeing	40	300 min
+Bondi Beach Visit	Sydney	beach	0	180 min
+Great Ocean Road Tour	Melbourne	nature	70	600 min
+Gold Coast Theme Park	Gold Coast	entertainment	80	480 min
+
+
+🇪🇬 Egypt
+Activity	Location	Category	Price	Duration
+Pyramids of Giza Tour	Cairo	culture	35	240 min
+Egyptian Museum Tour	Cairo	culture	25	180 min
+Cairo City Tour	Cairo	sightseeing	35	300 min
+Nile River Cruise	Cairo	entertainment	50	180 min
+Red Sea Snorkeling	Sharm El Sheikh	adventure	50	300 min
+Desert Safari	Sharm El Sheikh	adventure	45	300 min

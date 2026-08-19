@@ -1,0 +1,825 @@
+Absolutely. Since your `TourPackage` schema uses `destination_id` and `activity_id`, the cleanest way to populate  database is to create **realistic packages that use the activities we already created**.
+
+I would start with **20 tour packages**. That's enough to make the app look populated while giving  different package types and durations.
+
+For the database, replace the destination/activity names below with their actual MongoDB `_id` values.
+
+---
+
+# 🇹🇭 Thailand Tour Packages
+
+### 1. Thailand Highlights — 7 Days
+
+**Destination:** Thailand
+**Price:** $650
+**Duration:** 7 days
+**Max People:** 10
+**Category:** cultural
+
+**Itinerary:**
+
+**Day 1 — Bangkok**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Bangkok**
+
+* Grand Palace & Temple Tour
+* Wat Arun Visit
+* Chao Phraya River Cruise
+
+**Day 3 — Bangkok**
+
+* Floating Market Tour
+* Thai Cooking Class
+
+**Day 4 — Bangkok → Pattaya**
+
+* Transfer to Pattaya
+* Pattaya City Tour
+
+**Day 5 — Pattaya**
+
+* Coral Island Tour
+* Sanctuary of Truth
+
+**Day 6 — Pattaya → Bangkok**
+
+* Free Time
+* Bangkok City Tour
+
+**Day 7**
+
+* Airport Transfer
+
+**Included services:**
+
+* Airport transfers
+* Hotel accommodation
+* Daily breakfast
+* Intercity transportation
+* Selected activities
+
+---
+
+### 2. Thailand Beach Escape — 6 Days
+
+**Destination:** Thailand
+**Price:** $720
+**Duration:** 6 days
+**Max People:** 8
+**Category:** beach
+
+**Day 1 — Phuket**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Phuket**
+
+* Phi Phi Island Tour
+
+**Day 3 — Phuket**
+
+* James Bond Island Tour
+* Phuket Old Town Tour
+
+**Day 4 — Phuket**
+
+* Free Beach Day
+
+**Day 5 — Phuket**
+
+* Phuket Sunset Cruise
+
+**Day 6**
+
+* Airport Transfer
+
+---
+
+### 3. Bangkok & Pattaya Explorer — 5 Days
+
+**Destination:** Thailand
+**Price:** $480
+**Duration:** 5 days
+**Max People:** 10
+**Category:** city
+
+**Day 1 — Bangkok**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Bangkok**
+
+* Grand Palace & Temple Tour
+* Wat Arun Visit
+
+**Day 3 — Bangkok → Pattaya**
+
+* Transfer to Pattaya
+* Coral Island Tour
+
+**Day 4 — Pattaya**
+
+* Sanctuary of Truth
+* Pattaya City Tour
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+# 🇲🇾 Malaysia Tour Packages
+
+### 4. Malaysia Highlights — 6 Days
+
+**Destination:** Malaysia
+**Price:** $580
+**Duration:** 6 days
+**Max People:** 10
+**Category:** city
+
+**Day 1 — Kuala Lumpur**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Kuala Lumpur**
+
+* Petronas Twin Towers Visit
+* Kuala Lumpur City Tour
+* KL Tower Visit
+
+**Day 3 — Kuala Lumpur**
+
+* Batu Caves Tour
+* Jalan Alor Food Tour
+
+**Day 4 — Kuala Lumpur → Genting Highlands**
+
+* Genting Highlands Day Trip
+
+**Day 5 — Kuala Lumpur**
+
+* Free Time
+* Shopping
+
+**Day 6**
+
+* Airport Transfer
+
+---
+
+### 5. Langkawi Escape — 5 Days
+
+**Destination:** Malaysia
+**Price:** $550
+**Duration:** 5 days
+**Max People:** 8
+**Category:** beach
+
+**Day 1 — Langkawi**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Langkawi**
+
+* Langkawi Island Hopping
+* Sky Bridge Visit
+
+**Day 3 — Langkawi**
+
+* Langkawi Mangrove Tour
+
+**Day 4 — Langkawi**
+
+* Langkawi Sunset Cruise
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+### 6. Kuala Lumpur & Langkawi — 7 Days
+
+**Destination:** Malaysia
+**Price:** $750
+**Duration:** 7 days
+**Max People:** 10
+**Category:** family
+
+**Day 1 — Kuala Lumpur**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Kuala Lumpur**
+
+* Petronas Twin Towers
+* KL City Tour
+
+**Day 3 — Kuala Lumpur**
+
+* Batu Caves
+* Jalan Alor Food Tour
+
+**Day 4 — Kuala Lumpur → Langkawi**
+
+* Transfer to Langkawi
+
+**Day 5 — Langkawi**
+
+* Island Hopping
+* Sky Bridge
+
+**Day 6 — Langkawi**
+
+* Mangrove Tour
+* Sunset Cruise
+
+**Day 7**
+
+* Airport Transfer
+
+---
+
+# 🇸🇬 Singapore Tour Packages
+
+### 7. Singapore Highlights — 4 Days
+
+**Destination:** Singapore
+**Price:** $520
+**Duration:** 4 days
+**Max People:** 8
+**Category:** city
+
+**Day 1 — Singapore**
+
+* Airport Pickup
+* Marina Bay City Tour
+
+**Day 2 — Singapore**
+
+* Gardens by the Bay
+* Singapore Flyer
+* Singapore River Cruise
+
+**Day 3 — Sentosa**
+
+* Sentosa Island Tour
+* Universal Studios Singapore
+
+**Day 4**
+
+* Airport Transfer
+
+---
+
+### 8. Singapore Family Adventure — 5 Days
+
+**Destination:** Singapore
+**Price:** $650
+**Duration:** 5 days
+**Max People:** 8
+**Category:** family
+
+**Day 1**
+
+* Marina Bay City Tour
+
+**Day 2**
+
+* Gardens by the Bay
+* Singapore Flyer
+
+**Day 3**
+
+* Universal Studios Singapore
+
+**Day 4**
+
+* Sentosa Island Tour
+* Night Safari
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+# 🇮🇩 Indonesia Tour Packages
+
+### 9. Bali Escape — 6 Days
+
+**Destination:** Indonesia
+**Price:** $620
+**Duration:** 6 days
+**Max People:** 8
+**Category:** honeymoon
+
+**Day 1 — Bali**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Ubud**
+
+* Tegallalang Rice Terrace
+* Ubud Palace Visit
+
+**Day 3 — Bali**
+
+* Bali Swing Experience
+* Tanah Lot Temple
+
+**Day 4 — Bali**
+
+* Nusa Penida Island Tour
+
+**Day 5 — Bali**
+
+* Uluwatu Temple Visit
+* Bali Sunset Dinner Cruise
+
+**Day 6**
+
+* Airport Transfer
+
+---
+
+### 10. Bali Adventure — 5 Days
+
+**Destination:** Indonesia
+**Price:** $580
+**Duration:** 5 days
+**Max People:** 8
+**Category:** adventure
+
+**Day 1**
+
+* Airport Pickup
+
+**Day 2**
+
+* Mount Batur Sunrise Trek
+* Tegallalang Rice Terrace
+
+**Day 3**
+
+* Nusa Penida Island Tour
+
+**Day 4**
+
+* Bali Swing
+* Uluwatu Temple
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+# 🇲🇻 Maldives Tour Packages
+
+### 11. Maldives Paradise — 5 Days
+
+**Destination:** Maldives
+**Price:** $950
+**Duration:** 5 days
+**Max People:** 6
+**Category:** honeymoon
+
+**Day 1**
+
+* Airport Pickup
+* Resort Check-in
+
+**Day 2**
+
+* Snorkeling Trip
+* Sandbank Excursion
+
+**Day 3**
+
+* Island Hopping
+
+**Day 4**
+
+* Dolphin Watching Cruise
+* Sunset Cruise
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+### 12. Maldives Adventure Escape — 4 Days
+
+**Destination:** Maldives
+**Price:** $800
+**Duration:** 4 days
+**Max People:** 6
+**Category:** adventure
+
+**Day 1**
+
+* Resort Check-in
+
+**Day 2**
+
+* Scuba Diving Experience
+* Snorkeling Trip
+
+**Day 3**
+
+* Island Hopping
+* Sandbank Excursion
+
+**Day 4**
+
+* Airport Transfer
+
+---
+
+# 🇯🇵 Japan Tour Packages
+
+### 13. Japan Highlights — 7 Days
+
+**Destination:** Japan
+**Price:** $1,150
+**Duration:** 7 days
+**Max People:** 10
+**Category:** cultural
+
+**Day 1 — Tokyo**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2 — Tokyo**
+
+* Tokyo City Tour
+* Shibuya Walking Tour
+
+**Day 3 — Tokyo**
+
+* Mount Fuji Day Trip
+
+**Day 4 — Tokyo → Kyoto**
+
+* Transfer to Kyoto
+
+**Day 5 — Kyoto**
+
+* Kyoto Temple Tour
+* Arashiyama Bamboo Forest
+
+**Day 6 — Kyoto → Osaka**
+
+* Osaka Castle Visit
+* Osaka Food Tour
+
+**Day 7**
+
+* Airport Transfer
+
+---
+
+### 14. Tokyo Explorer — 5 Days
+
+**Destination:** Japan
+**Price:** $780
+**Duration:** 5 days
+**Max People:** 8
+**Category:** city
+
+**Day 1**
+
+* Airport Pickup
+
+**Day 2**
+
+* Tokyo City Tour
+* Shibuya Walking Tour
+
+**Day 3**
+
+* Mount Fuji Day Trip
+
+**Day 4**
+
+* Free Time
+* Shopping
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+# 🇦🇪 UAE Tour Packages
+
+### 15. Dubai Highlights — 5 Days
+
+**Destination:** United Arab Emirates
+**Price:** $700
+**Duration:** 5 days
+**Max People:** 8
+**Category:** luxury
+
+**Day 1 — Dubai**
+
+* Airport Pickup
+* Hotel Check-in
+
+**Day 2**
+
+* Dubai City Tour
+* Burj Khalifa Visit
+
+**Day 3**
+
+* Dubai Mall & Downtown Tour
+* Dubai Marina Cruise
+
+**Day 4**
+
+* Desert Safari
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+### 16. Dubai & Abu Dhabi — 6 Days
+
+**Destination:** United Arab Emirates
+**Price:** $850
+**Duration:** 6 days
+**Max People:** 10
+**Category:** luxury
+
+**Day 1 — Dubai**
+
+* Airport Pickup
+
+**Day 2 — Dubai**
+
+* Dubai City Tour
+* Burj Khalifa
+
+**Day 3 — Dubai**
+
+* Desert Safari
+
+**Day 4 — Abu Dhabi**
+
+* Abu Dhabi City Tour
+* Sheikh Zayed Grand Mosque
+
+**Day 5 — Abu Dhabi**
+
+* Ferrari World Visit
+
+**Day 6**
+
+* Airport Transfer
+
+---
+
+# 🇹🇷 Turkey Tour Packages
+
+### 17. Turkey Highlights — 8 Days
+
+**Destination:** Turkey
+**Price:** $1,050
+**Duration:** 8 days
+**Max People:** 10
+**Category:** cultural
+
+**Day 1 — Istanbul**
+
+* Airport Pickup
+
+**Day 2 — Istanbul**
+
+* Istanbul City Tour
+* Hagia Sophia Visit
+
+**Day 3 — Istanbul**
+
+* Bosphorus Cruise
+* Grand Bazaar Tour
+
+**Day 4 — Istanbul → Cappadocia**
+
+* Transfer to Cappadocia
+
+**Day 5 — Cappadocia**
+
+* Cappadocia Hot Air Balloon
+* Cappadocia Valley Tour
+
+**Day 6 — Cappadocia → Pamukkale**
+
+* Transfer
+
+**Day 7 — Pamukkale**
+
+* Pamukkale Tour
+
+**Day 8**
+
+* Airport Transfer
+
+---
+
+# 🇫🇷 France Tour Packages
+
+### 18. Paris Escape — 5 Days
+
+**Destination:** France
+**Price:** $850
+**Duration:** 5 days
+**Max People:** 8
+**Category:** city
+
+**Day 1 — Paris**
+
+* Airport Pickup
+
+**Day 2**
+
+* Eiffel Tower Visit
+* Paris City Tour
+
+**Day 3**
+
+* Louvre Museum Tour
+* Seine River Cruise
+
+**Day 4**
+
+* Versailles Palace Tour
+* French Food Tour
+
+**Day 5**
+
+* Airport Transfer
+
+---
+
+# 🇮🇹 Italy Tour Packages
+
+### 19. Italy Highlights — 8 Days
+
+**Destination:** Italy
+**Price:** $1,100
+**Duration:** 8 days
+**Max People:** 10
+**Category:** cultural
+
+**Day 1 — Rome**
+
+* Airport Pickup
+
+**Day 2 — Rome**
+
+* Colosseum Tour
+* Rome City Tour
+
+**Day 3 — Rome**
+
+* Vatican Museums Tour
+
+**Day 4 — Rome → Florence**
+
+* Transfer to Florence
+* Florence Walking Tour
+
+**Day 5 — Florence → Venice**
+
+* Transfer to Venice
+* Venice Walking Tour
+
+**Day 6 — Venice**
+
+* Venice Gondola Ride
+
+**Day 7**
+
+* Free Time
+
+**Day 8**
+
+* Airport Transfer
+
+---
+
+# 🇨🇭 Switzerland Tour Packages
+
+### 20. Swiss Alps Experience — 7 Days
+
+**Destination:** Switzerland
+**Price:** $1,300
+**Duration:** 7 days
+**Max People:** 8
+**Category:** nature
+
+**Day 1 — Zurich**
+
+* Airport Pickup
+
+**Day 2 — Zurich**
+
+* Zurich City Tour
+* Rhine Falls Tour
+
+**Day 3 — Zurich → Lucerne**
+
+* Transfer to Lucerne
+* Lucerne City Tour
+
+**Day 4 — Lucerne**
+
+* Mount Titlis Tour
+
+**Day 5 — Lucerne → Interlaken**
+
+* Transfer to Interlaken
+* Interlaken City Tour
+
+**Day 6 — Interlaken**
+
+* Jungfraujoch Day Trip
+
+**Day 7**
+
+* Airport Transfer
+
+---
+
+## One important change to  schema
+
+Looking at these packages, I would make **one small improvement** to  `TourPackage` schema.
+
+Right now we have:
+
+```js
+included_services: [String]
+```
+
+That's fine for things like:
+
+```text
+Airport transfers
+Breakfast
+Hotel accommodation
+```
+
+But don't put activities there. Activities should **only exist inside the itinerary**, because that's what allows  customization system to work.
+
+So:
+
+```text
+included_services
+    ↓
+Airport transfer
+Breakfast
+Hotel accommodation
+Travel insurance
+
+itinerary
+    ↓
+Day 1
+  Activity A
+  Activity B
+
+Day 2
+  Activity C
+  Activity D
+```
+
+Then when the user removes **Activity C**, your app can simply remove it from their `CustomizedTour`.
+
+### Also, don't create a separate package for every combination.
+
+For example, i  don't need:
+
+> Thailand Explorer + No Wat Arun
+
+> Thailand Explorer + Sunset Cruise
+
+> Thailand Explorer + Deluxe Hotel
+
+Keep **one original `TourPackage`** and let `CustomizedTour` store the user's changes.
+
+That's what will make  customization feature actually useful.
