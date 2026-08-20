@@ -1,0 +1,455 @@
+Yes. Now that we've designed your database, let's define exactly **what the "Customize Trip" feature should do** in your app.
+
+The basic idea should be:
+
+> **User doesn't create a trip from zero. They start with one of your ready-made tour packages and modify it.**
+
+That's also close to how real travel platforms approach customization. TourRadar, for example, supports adding/removing activities, changing dates, customizing itineraries, and accommodation upgrades. ([TourRadar][1])
+
+For your university project, I would keep it simpler and focus on the features we already agreed on.
+
+---
+
+# 🧳 Customize Trip
+
+Suppose the user opens:
+
+### Thailand Highlights
+
+**7 Days · $650/person**
+
+They see:
+
+**[ Customize Trip ]**
+
+When they click it, your app creates a **draft customized trip** based on the original package.
+
+The original package itself is **never changed**.
+
+---
+
+# 1. Select Travel Date ⭐
+
+At the top:
+
+> **When are you travelling?**
+
+📅 20 September 2026
+
+The user selects their travel date.
+
+You store this in:
+
+```text
+CustomizedTour
+    ↓
+travel_date
+```
+
+For your current project, you don't need to connect this to real flight/hotel availability.
+
+---
+
+# 2. Select Number of Travelers ⭐
+
+For example:
+
+### Travelers
+
+**Adults** `− 2 +`
+
+**Children** `− 1 +`
+
+You could initially simplify this to just:
+
+> **Number of travelers: 3**
+
+But if you want the app to look more complete, use:
+
+```text
+Adults: 2
+Children: 1
+```
+
+This will also allow you to calculate the total package price.
+
+---
+
+# 3. Customize Activities ⭐⭐⭐
+
+This is the **main feature**.
+
+Show the package day by day.
+
+### Day 2 — Bangkok
+
+**Included activities**
+
+✓ Grand Palace & Temple Tour
+✓ Wat Arun Visit
+✓ Chao Phraya River Cruise
+
+The user can click:
+
+**Remove**
+
+For example:
+
+> ❌ Remove Wat Arun
+
+Now the itinerary becomes:
+
+✓ Grand Palace
+✓ Chao Phraya River Cruise
+
+---
+
+# 4. Add Activities ⭐⭐⭐
+
+After the existing activities, show:
+
+### Add activities
+
+`+ Add Activity`
+
+When clicked, show activities from the **same destination**.
+
+For Bangkok:
+
+```text
+Floating Market Tour
+$30
+
+Thai Cooking Class
+$40
+
+Safari World
+$45
+```
+
+The user selects:
+
+> **+ Thai Cooking Class**
+
+Now it gets added to that day.
+
+This is much better than letting users type random activities because your database already knows which activities belong to Thailand.
+
+---
+
+# 5. Optional Activities ⭐⭐⭐
+
+Some activities in your package can be marked:
+
+```text
+is_optional: true
+```
+
+For example:
+
+### Day 4 — Phuket
+
+**Included**
+
+✓ Phuket Old Town Tour
+
+**Optional**
+
+○ Sunset Cruise +$50
+○ Snorkeling +$25
+
+The user can select whichever they want.
+
+Optional add-ons are a common way to give travelers flexibility without making the base package unnecessarily expensive. ([Tern][2])
+
+---
+
+# 6. Reorder Activities ⭐⭐
+
+This is your **nice-to-have** feature.
+
+For example, originally:
+
+```text
+Day 2
+
+1. Grand Palace
+2. Wat Arun
+3. River Cruise
+```
+
+The user can drag:
+
+```text
+Day 2
+
+1. River Cruise
+2. Grand Palace
+3. Wat Arun
+```
+
+Your `sort_order` field handles this.
+
+This is also similar to how some itinerary builders let users rearrange activities and itinerary items. ([Explorica][3])
+
+### Important:
+
+I would only allow reordering **within the same day** for your project.
+
+Don't let users drag something from Day 2 to Day 6 yet.
+
+That creates a lot of extra problems with:
+
+* travel time
+* opening hours
+* activity duration
+* location
+* conflicting schedules
+
+---
+
+# 7. Hotel Selection ⭐⭐
+
+If you're implementing the nice-to-have features, I'd make this a simple choice.
+
+### Choose your hotel
+
+**Standard**
+
+Included
+
+**Deluxe**
+
+`+$120`
+
+**Luxury**
+
+`+$250`
+
+You don't need a separate Hotel collection for your current project.
+
+Your customized tour can simply store:
+
+```text
+hotel:
+    name
+    price
+    room_type
+```
+
+---
+
+# 8. Room Type ⭐⭐
+
+After choosing the hotel:
+
+### Room Type
+
+○ Single
+● Double
+○ Twin
+○ Triple
+○ Family
+
+For example:
+
+> Deluxe Hotel
+> Double Room
+> +$120
+
+---
+
+# 9. Transportation ⭐⭐
+
+Give users a few predefined options.
+
+### Transportation
+
+**Shared Transfer**
+
+Included
+
+**Private Car**
+
+`+$50`
+
+**Luxury Vehicle**
+
+`+$100`
+
+The user selects:
+
+> Private Car +$50
+
+Your `CustomizedTour` stores the selected transportation and its price.
+
+---
+
+# 10. Live Price Calculation ⭐⭐⭐
+
+This is **very important** for your customization feature.
+
+The price should update whenever the user makes a change.
+
+For example:
+
+```text
+Thailand Highlights
+
+Base package                $650
+
+Removed activities          -$20
+Added activities            +$40
+
+Deluxe hotel               +$120
+
+Private transportation      +$50
+────────────────────────────────
+Total                       $840
+```
+
+So the user always knows:
+
+> **"If I add this, how much more will I pay?"**
+
+Real travel customization platforms also emphasize showing pricing changes as users modify their itinerary. ([Tratoli][4])
+
+---
+
+# 11. Review Customized Trip
+
+Before booking, give them a final page:
+
+## Your Customized Trip
+
+### Thailand — 7 Days
+
+**Travel date:**
+20 September 2026
+
+**Travelers:**
+2 Adults + 1 Child
+
+### Day 1 — Bangkok
+
+✓ Airport Pickup
+✓ Hotel Check-in
+
+### Day 2 — Bangkok
+
+✓ Grand Palace
+✓ Chao Phraya River Cruise
+✓ Thai Cooking Class
+
+### Day 3 — Pattaya
+
+✓ Coral Island
+❌ Sanctuary of Truth
+
+### Hotel
+
+Deluxe Hotel
+Double Room
+
+### Transportation
+
+Private Car
+
+---
+
+### Price
+
+|                  |    Price |
+| ---------------- | -------: |
+| Base Package     |     $650 |
+| Added Activities |     +$40 |
+| Hotel Upgrade    |    +$120 |
+| Transportation   |     +$50 |
+| **Total**        | **$860** |
+
+**[ Confirm Trip ]**
+
+---
+
+# What happens after "Confirm Trip"?
+
+This is where your database structure becomes useful.
+
+The flow is:
+
+```text
+TourPackage
+     │
+     │ User clicks Customize
+     ↓
+CustomizedTour
+     │
+     │ User makes changes
+     │
+     ├── Adds activities
+     ├── Removes activities
+     ├── Reorders activities
+     ├── Selects travelers
+     ├── Selects date
+     ├── Selects hotel
+     └── Selects transportation
+     │
+     ↓
+Review
+     │
+     ↓
+Confirm
+     │
+     ↓
+Booking
+```
+
+---
+
+# What I would NOT include yet
+
+Even though real platforms can offer much deeper customization, don't try to copy everything.
+
+For example, some platforms let users change cities, number of nights, routes, hotels, activities, meals, and more. ([Tratoli][4])
+
+For **your project**, I would NOT allow:
+
+❌ Changing the number of days
+❌ Adding completely new destinations
+❌ Creating an itinerary from scratch
+❌ Adding activities that don't belong to the destination
+❌ Changing flights
+❌ Changing individual hotel nights
+❌ Custom transportation routes
+❌ Free-form activities typed by the user
+
+Those features can make your backend much more complicated.
+
+---
+
+# So your final Customize Trip feature is
+
+### Must Have ⭐⭐⭐
+
+1. **Choose travel date**
+2. **Choose number of travelers**
+3. **Remove activities**
+4. **Add activities**
+5. **Select optional activities**
+6. **Automatically update total price**
+
+### Nice to Have ⭐⭐
+
+7. **Reorder activities**
+8. **Choose hotel**
+9. **Choose room type**
+10. **Choose transportation**
+
+And that's actually a **very good scope** for your project.
+
+The user gets genuine control over the package, while your system still keeps everything controlled through your predefined `Activity` and `TourPackage` data.
+
+[1]: https://www.tourradar.com/f/custom?utm_source=chatgpt.com "Best Personalized Tour Packages 2026/2027 - Customize Your Trip - TourRadar"
+[2]: https://help.tern.travel/en/articles/10450232-a-guide-to-optional-add-ons?utm_source=chatgpt.com "A guide to Optional Add-Ons | Tern App"
+[3]: https://www.explorica.ca/teachers/custom-tours.aspx?utm_source=chatgpt.com "How to Customize your Educational Tours | Explorica"
+[4]: https://www.tratoli.com/?utm_source=chatgpt.com "Tratoli — Curated travel packages across the world"
