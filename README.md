@@ -1,6 +1,9 @@
 # VoyageTour
 
 A full-stack tour booking and trip customization platform — a Flutter mobile app backed by a Node.js/Express/MongoDB API, with Stripe payments, an admin dashboard, and a promo-code offers system.
+link to WireFrame https://app.visily.ai/projects/4e747567-a23b-4047-a641-1ddfaa83e903/boards/2690093
+link to Schema Diagram https://drive.google.com/file/d/1jRMpd5ynsFXZHeIDA_wJYCcWOKoFeSxU/view?usp=sharing
+link to  Video https://drive.google.com/drive/folders/1t4AlCH26PbHD7ObFQGTYFg7JYgdwlfNY?usp=sharings
 
 ## Tech Stack
 
